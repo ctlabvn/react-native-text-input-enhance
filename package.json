@@ -1,19 +1,23 @@
 {
   "name": "react-native-text-input-enhance",
   "version": "1.0.5",
-  "description": "",
+  "description": "Text Input Enhance to fix clear text value in React Native Text Input",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agiletechvn/react-native-text-input-enhance.git"
+  },
   "keywords": [
-    "react-native"
+    "react-native", "minhchienwikipedia", "agiletechvn", "ios", "android"
   ],
-  "author": "",
-  "license": "",
+  "author":
+    "Duong Minh Chien <minhchienwikipedia@gmail.com> (https://github.com/minhchienwikipedia)",
+  "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
+    "react-native": "^0.41.2"
   },
   "dependencies": {}
 }
