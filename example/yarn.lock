@@ -4165,9 +4165,9 @@ react-is@^16.3.1:
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.0.tgz#cc9fdc855ac34d2e7d9d2eb7059bbc240d35ffcf"
 
-react-native-text-input-enhance@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/react-native-text-input-enhance/-/react-native-text-input-enhance-1.0.8.tgz#e7ff7d5ba122d9b6b52a96fdc6e5e2e6dde54f8c"
+react-native-text-input-enhance@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-native-text-input-enhance/-/react-native-text-input-enhance-1.0.9.tgz#670f1585ff678e856fc803343e6769f47f073162"
 
 react-native@0.55.4:
   version "0.55.4"
