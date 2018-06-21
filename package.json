@@ -1,6 +1,6 @@
 {
   "name": "react-native-text-input-enhance",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "Text Input Enhance to fix clear text value in React Native Text Input",
   "main": "index.js",
   "scripts": {

@@ -1,21 +1,26 @@
 import React from 'react';
 import { TextInput as T, TextInputProps } from 'react-native';
 
-export default class TextInput extends React.Component<TextInputProps> {
+type Props = {
+  hasRef?: () => void,
+  onChangeText?: () => void
+};
+export default class TextInput extends React.Component<TextInputProps, Props> {
   state = {
     text: ''
   };
 
   componentDidMount() {
-    this.props.hasRef && this.props.hasRef(this);
+    this.unputRef.clear = this.clear;
+    this.props.hasRef && this.props.hasRef(this.unputRef);
   }
 
-  clear() {
+  clear = () => {
     this.setState({ text: '' });
-  }
+  };
 
   render() {
-    const { onChangeText } = this.props;
+    const { onChangeText, inputRef } = this.props;
     let props = this.props;
     let arrProps = {};
     for (const key in props) {
@@ -27,6 +32,7 @@ export default class TextInput extends React.Component<TextInputProps> {
     }
     return (
       <T
+        ref={ref => (this.unputRef = ref)}
         value={this.state.text}
         onChangeText={val => {
           onChangeText && onChangeText(val);

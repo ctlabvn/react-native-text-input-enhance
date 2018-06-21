@@ -23,7 +23,12 @@ This issue can fix in the future with this fix
 import RNTextInput from 'react-native-text-input-enhance';
 
 // TODO: What to do with the module?
-<TextInput ref={ref => (this.textInputRef = ref)} />
+
+<TextInput 
+  hasRef={ref => (this.textInputRef = ref)} // Use "hasRef" instead of "ref"
+  onSubmitEditing={() => this.textInputRef2.focus()} 
+/> 
+<TextInput hasRef={ref => (this.textInputRef2 = ref)} />
 
 // You can call this fuction in some where to clear text
 this.textInputRef.clear();
