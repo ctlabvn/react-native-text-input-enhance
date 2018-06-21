@@ -23,6 +23,7 @@ export default class App extends Component<Props> {
             borderWidth: 1,
             borderColor: 'gray',
             width: 250,
+            // height: 40,
             justifyContent: 'center',
             alignItems: 'center',
             padding: 10,
@@ -31,7 +32,24 @@ export default class App extends Component<Props> {
           }}
           placeholder="Write something..."
           placeholderTextColor="rgba(76, 76, 76, 0.54)"
-          ref={ref => (this.textInputRef = ref)}
+          hasRef={ref => (this.textInputRef = ref)}
+          onSubmitEditing={() => this.textInputRef2.focus()}
+        />
+        <RNTextInput
+          style={{
+            borderWidth: 1,
+            borderColor: 'gray',
+            width: 250,
+            // height: 40,
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: 10,
+            borderRadius: 5,
+            color: '#4C4C4C'
+          }}
+          placeholder="Write something..."
+          placeholderTextColor="rgba(76, 76, 76, 0.54)"
+          hasRef={ref => (this.textInputRef2 = ref)}
         />
         <Text onPress={() => this.textInputRef.clear()} style={styles.welcome}>
           Clear Text
